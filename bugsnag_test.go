@@ -78,7 +78,7 @@ func TestNotify(t *testing.T) {
 			ReleaseStage:    "test",
 			AppVersion:      "1.2.3",
 			Hostname:        "web1",
-			ProjectPackages: []string{"github.com/bugsnag/bugsnag-go"},
+			ProjectPackages: []string{"github.com/kyrylo/bugsnag-go"},
 		},
 		User{Id: "123", Name: "Conrad", Email: "me@cirw.in"},
 		Context{"testing"},
@@ -186,7 +186,7 @@ func TestHandler(t *testing.T) {
 	l, err := runCrashyServer(Configuration{
 		APIKey:          testAPIKey,
 		Endpoint:        testEndpoint,
-		ProjectPackages: []string{"github.com/bugsnag/bugsnag-go"},
+		ProjectPackages: []string{"github.com/kyrylo/bugsnag-go"},
 		Logger:          log.New(ioutil.Discard, log.Prefix(), log.Flags()),
 	}, SeverityInfo)
 	if err != nil {

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/bugsnag/bugsnag-go"
+	"github.com/kyrylo/bugsnag-go"
 	"github.com/revel/revel"
 )
 

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/bugsnag/bugsnag-go/errors"
+	"github.com/kyrylo/bugsnag-go/errors"
 )
 
 type _account struct {

@@ -3,7 +3,7 @@ package bugsnag
 import (
 	"fmt"
 
-	"github.com/bugsnag/bugsnag-go/errors"
+	"github.com/kyrylo/bugsnag-go/errors"
 )
 
 // Notifier sends errors to Bugsnag.

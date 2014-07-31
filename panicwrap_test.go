@@ -71,7 +71,7 @@ func TestPanicHandler(t *testing.T) {
 
 func init() {
 	if os.Getenv("please_panic") != "" {
-		Configure(Configuration{APIKey: os.Getenv("BUGSNAG_API_KEY"), Endpoint: os.Getenv("BUGSNAG_ENDPOINT"), ProjectPackages: []string{"github.com/bugsnag/bugsnag-go"}})
+		Configure(Configuration{APIKey: os.Getenv("BUGSNAG_API_KEY"), Endpoint: os.Getenv("BUGSNAG_ENDPOINT"), ProjectPackages: []string{"github.com/kyrylo/bugsnag-go"}})
 		go func() {
 			panick()
 		}()

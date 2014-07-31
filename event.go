@@ -3,7 +3,7 @@ package bugsnag
 import (
 	"strings"
 
-	"github.com/bugsnag/bugsnag-go/errors"
+	"github.com/kyrylo/bugsnag-go/errors"
 )
 
 // Context is the context of the error in Bugsnag.
