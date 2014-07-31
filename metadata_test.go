@@ -14,11 +14,10 @@ type _account struct {
 	Plan struct {
 		Premium bool
 	}
-	Password      string
-	secret        string
-	Email         string `json:"email"`
-	EmptyEmail    string `json:"emptyemail,omitempty"`
-	NotEmptyEmail string `json:"not_empty_email,omitempty"`
+	Password   string
+	secret     string
+	Email      string `json:"email"`
+	EmptyEmail string `json:"emptyemail,omitempty"`
 }
 
 type _broken struct {
@@ -111,7 +110,6 @@ func TestMetaDataSanitize(t *testing.T) {
 	account.secret = "hush"
 	account.Email = "example@example.com"
 	account.EmptyEmail = ""
-	account.NotEmptyEmail = "not_empty_email@example.com"
 
 	m := MetaData{
 		"one": {
@@ -163,7 +161,6 @@ func TestMetaDataSanitize(t *testing.T) {
 				},
 				"Password": "[REDACTED]",
 				"email": "example@example.com",
-			 	"not_empty_email": "not_empty_email@example.com",
 			},
 		},
 	}) {
